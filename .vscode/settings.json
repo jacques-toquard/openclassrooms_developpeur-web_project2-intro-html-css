@@ -2,5 +2,25 @@
     "[html]": {
         "editor.tabSize": 4
     },
-    "editor.detectIndentation": false
+    "editor.detectIndentation": false,
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#906d97",
+        "activityBar.background": "#906d97",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#4a4735",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "commandCenter.border": "#e7e7e799",
+        "sash.hoverBorder": "#906d97",
+        "statusBar.background": "#74577a",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#906d97",
+        "statusBarItem.remoteBackground": "#74577a",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "titleBar.activeBackground": "#74577a",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#74577a99",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.remoteColor": "#74577a"
 }
