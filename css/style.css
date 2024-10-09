@@ -46,7 +46,7 @@ header nav a {
     text-decoration: none;
     color: var(--main-color);
     font-weight: 500;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-top: 2px solid transparent;
 }
 
