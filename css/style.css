@@ -70,8 +70,9 @@ header nav a:active {
 
 .search-form { 
     display: flex;
+    justify-content: center;
     align-items: center;
-    max-width: 400px;
+    max-width: 350px;
     background-color: #ffffff;
     border-radius: 15px 15px 15px 15px;
   }
@@ -88,6 +89,7 @@ header nav a:active {
 
 .search-form-icon i {
     color: #000000;
+    font-size: 20px;
 }
 
 .search-form input {
@@ -102,6 +104,7 @@ header nav a:active {
     width: 150px;
     text-align: center;
     border-radius: 5px 5px 5px 5px;
+    flex-grow: 1;
 }
 
 .search-form input::placeholder {
@@ -112,4 +115,24 @@ header nav a:active {
 
 .search-form input:focus::placeholder {
     color: transparent;
+}
+
+.search-button {
+    background-color: var(--main-color);
+    height: 50px;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    border: none;
+}
+
+.search-button .search-text {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.search-button .search-icon {
+    display: none;
 }
