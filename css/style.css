@@ -180,3 +180,26 @@ header nav a:active {
     background-color: var(--filter-bg-color);
     border-color: var(--main-color);
 }
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    gap: 10px;
+}
+
+.info i {
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+}
+
