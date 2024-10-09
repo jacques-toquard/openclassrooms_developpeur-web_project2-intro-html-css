@@ -73,7 +73,7 @@ header nav a:active {
     align-items: center;
     max-width: 350px;
     background-color: #ffffff;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 15px;
 }
 
 .search-form-icon {
@@ -102,7 +102,7 @@ header nav a:active {
     height: 25px;
     width: 150px;
     text-align: center;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
     flex-grow: 1;
 }
 
@@ -263,15 +263,15 @@ a {
 .hebergements-cards .card{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    max-width: 260px;
+    max-height: 200px;
 }
 
 .hebergements-cards img {
-    height: 100px;
-    width: 300px;
+    height: 55%;
+    width: auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-
 }
 
 .hebergements-cards .card-content {
@@ -294,6 +294,15 @@ a {
 
 .hebergements-cards .card-rating {
     margin-bottom: 5px;
+}
+
+.see-more-button {
+    margin-top: 30px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 /****** Populaires ***********/
