@@ -30,16 +30,21 @@
       </header>
       <h1 id="title">Trouvez votre hébergement pour des vacances de rêve</h1>
       <h2 id="subtitle">En plein centre-ville ou en pleine nature</h2>
-      <nav id="search-filter">
-        <form>
-          <i class="fa-solid fa-location-dot"></i>
-          <label> Marseille, France </label>
-          <input
+      <nav>
+        <form class="search-form">
+            <div class="search-form-icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <input
             type="text"
             id="search"
-            name="recherche"
-            placeholder="Rechercher une autre ville ?"
+            name="city"
+            placeholder="Marseille, France"
           />
+          <button type="submit" class="search-button">
+            <span class="search-text">Rechercher</span>
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          </button>
         </form>
       </nav>
       <main></main>

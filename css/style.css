@@ -67,3 +67,49 @@ header nav a:active {
     font-weight: normal;
     margin-top: 0;
 }
+
+.search-form { 
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+.search-form-icon {
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0 0 15px;
+}
+
+.search-form-icon i {
+    color: #000000;
+}
+
+.search-form input {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    height: 25px;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.search-form input::placeholder {
+    color: #000000;
+    opacity: 1;
+    text-align: center;
+}
+
+.search-form input:focus::placeholder {
+    color: transparent;
+}
