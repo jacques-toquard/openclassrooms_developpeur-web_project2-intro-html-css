@@ -69,21 +69,22 @@ header nav a:active {
 
 .search-form {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 350px;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    max-width: 450px;
     background-color: #ffffff;
     border-radius: 15px;
+    overflow: hidden;
 }
 
 .search-form-icon {
-    background-color: #f2f2f2;
-    width: 50px;
-    height: 50px;
+    background-color: var(--main-bg-color);
+    width: 15%;
+    min-width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px 0 0 15px;
 }
 
 .search-form-icon i {
@@ -91,19 +92,21 @@ header nav a:active {
     font-size: 20px;
 }
 
+.search-input-wrapper {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
 .search-form input {
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 100%;
+    padding: 0 10px;
     border: none;
     background-color: transparent;
     font-size: 16px;
     font-weight: bold;
     color: #000000;
-    height: 25px;
-    width: 150px;
-    text-align: center;
-    border-radius: 5px;
-    flex-grow: 1;
+    height: 50px;
 }
 
 .search-form input::placeholder {
@@ -118,18 +121,24 @@ header nav a:active {
 
 .search-button {
     background-color: var(--main-color);
-    height: 50px;
-    border-radius: 0 15px 15px 0;
-    cursor: pointer;
+    width: 30%;
+    min-width: 100px;
     border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.search-button:hover {
+    opacity: 0.9;
 }
 
 .search-button .search-text {
     color: white;
     font-size: 16px;
     font-weight: bold;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .search-button .search-icon {
@@ -140,18 +149,20 @@ header nav a:active {
     margin-top: 20px;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-  }
+    width: 100%;
+}
 
 .filters h2 {
     font-size: 18px;
-    margin: 0 20px 0 0;
+    margin: 0 2% 10px 0;
     white-space: nowrap;
 }
 
 .filter-buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
+    width: 80%;
 }
 
 .filter-button {
@@ -164,6 +175,7 @@ header nav a:active {
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
+    min-width: 120px;
 }
 
 .filter-button:hover {
@@ -173,6 +185,12 @@ header nav a:active {
 .filter-button i {
     margin-right: 10px;
     color: var(--main-color);
+}
+
+.filter-button span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .filter-button.active {
