@@ -145,6 +145,23 @@ header nav a:active {
     display: none;
 }
 
+@media (max-width: 480px) {
+    .search-button .search-text {
+        display: none;
+    }
+    
+    .search-button .search-icon {
+        display: block;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .search-button {
+        min-width: 50px;
+        width: 15%;
+    }
+}
+
 .filters {
     margin-top: 20px;
     display: flex;
