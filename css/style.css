@@ -291,8 +291,13 @@ a {
 .hebergements-cards {
     display: flex;
     margin-top: 33px;
-    gap: 25px;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hebergements-cards a {
+    width: 30%;
+    margin-bottom: 20px;
 }
 
 .hebergements-cards .card{
@@ -391,7 +396,7 @@ a {
     margin-bottom: 5px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1440px) { /*TODO: est ce la bonne largeur ? a cause des marges externes, le changement ne se fait pas reelement immediatement*/
     .hebergements {
         width: 100%;
     }
