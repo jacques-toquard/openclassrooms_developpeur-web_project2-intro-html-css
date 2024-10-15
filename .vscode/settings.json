@@ -3,6 +3,10 @@
         "editor.tabSize": 4
     },
     "editor.detectIndentation": false,
+    "files.exclude": {
+        "**/.prettierrc": true
+    },
+    "peacock.remoteColor": "#74577a",
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#906d97",
         "activityBar.background": "#906d97",
@@ -21,6 +25,5 @@
         "titleBar.activeForeground": "#e7e7e7",
         "titleBar.inactiveBackground": "#74577a99",
         "titleBar.inactiveForeground": "#e7e7e799"
-    },
-    "peacock.remoteColor": "#74577a"
+    }
 }
