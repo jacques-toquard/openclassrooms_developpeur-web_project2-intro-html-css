@@ -230,10 +230,63 @@ main {
 
 /****** Hebergements And Populaires ***********/
 
+
+/*********** Footer ***********/
+
+footer {
+    background-color: #f2f2f2;
+    padding: 1rem 0;
+}
+
+#footer-container {
+    margin: 0 calc(1rem + 1vw);
+    display: flex;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    color: #000000;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.3rem;
+}
+
+.footer-section ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-section ul li a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
 /*********** Tablet Styles ***********/
 @media (max-width: 1024px) {
 }
 
 /*********** Mobile Styles ***********/
 @media (max-width: 768px) {
+    #footer-container {
+        flex-direction: column;
+    }
 }
