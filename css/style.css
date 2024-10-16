@@ -25,7 +25,7 @@ body {
     padding: 0 calc(1rem + 1vw);
 }
 
-/* Header */
+/*********** Header ***********/
 
 header {
     display: flex;
@@ -79,13 +79,13 @@ header h2 {
     margin-top: 0;
 }
 
-/* Main */
+/*********** Main ***********/
 
 main {
     margin-top: calc(0.5rem + 0.5vw);
 }
 
-/* Main nav form */
+/***********Main Nav Form ***********/
 
 #search-form {
     display: flex;
@@ -163,14 +163,14 @@ main {
     display: none;
 }
 
-/* Main nav filters */
+/*********** Main Nav Filters ***********/
 
 #filters {
     margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: calc((20rem + 5vw)*1.7);
+    width: calc((20rem + 5vw) * 1.7);
 }
 
 #filters h2 {
@@ -228,37 +228,12 @@ main {
     border: 1px solid gray;
 }
 
+/****** Hebergements And Populaires ***********/
 
-/* footer {
-} */
-
-/* Tablet styles */
+/*********** Tablet Styles ***********/
 @media (max-width: 1024px) {
-
 }
 
-/* Mobile styles */
+/*********** Mobile Styles ***********/
 @media (max-width: 768px) {
-    html {
-        font-size: calc(13px + 0.1953125vw); /* Slightly smaller base size for mobile */
-    }
-
-    #container {
-        padding: 0 calc(0.5rem + 1vw); /* Smaller padding for mobile */
-        min-width: 320px; /* Ensuring minimum width */
-    }
-
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: calc(0.5rem + 1vw) 0;
-    }
-
-    #header-logo {
-        margin-bottom: calc(0.5rem + 0.5vw);
-    }
-
-    header nav {
-        margin-top: 0;
-    }
 }
