@@ -9,8 +9,8 @@
 }
 
 html {
-    font-size: 16px;
-}
+    font-size: clamp(14px, calc(14px + 0.1953125vw), 16px);
+  }
 
 body {
     font-family: "Raleway", sans-serif;
@@ -22,25 +22,44 @@ body {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 2rem; /* Larger padding for desktop */
+    padding: 0 calc(1rem + 1vw);
     background-color: var(--main-bg-color);
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 2rem 0;
+    align-items: start;
 }
 
 #header-logo {
-    width: 150px;
+    height: calc(1.5rem + 0.5vw);
+    margin-top: calc(1.5rem + 0.5vw);
+    margin-bottom: calc(0.5rem + 0.5vw);
 }
 
 #header-logo img {
-    width: 100%;
-    height: auto;
+    height: 100%;
+    width: auto;
     object-fit: contain;
+}
+
+header nav {
+    display: flex;
+    gap: calc(1rem + 1vw);
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 500;
+    padding: 0.8rem;
+    border-top: 0.2rem solid transparent;
+}
+
+header nav a:hover,
+header nav a:active {
+    border-top-color: var(--main-color);
 }
 
 main {
@@ -53,33 +72,31 @@ footer {
 
 /* Tablet styles */
 @media (max-width: 1024px) {
-    html {
-        font-size: 15px;
-    }
 
-    #container {
-        padding: 0 1.5rem;
-    }
 }
 
 /* Mobile styles */
 @media (max-width: 768px) {
     html {
-        font-size: 14px; /* Even smaller base font size for mobile */
+        font-size: calc(13px + 0.1953125vw); /* Slightly smaller base size for mobile */
     }
 
     #container {
-        padding: 0 1rem; /* Smaller padding for mobile */
+        padding: 0 calc(0.5rem + 1vw); /* Smaller padding for mobile */
         min-width: 320px; /* Ensuring minimum width */
     }
 
     header {
         flex-direction: column;
         align-items: center;
-        padding: 1rem 0;
+        padding: calc(0.5rem + 1vw) 0;
     }
 
     #header-logo {
-        margin-bottom: 1rem;
+        margin-bottom: calc(0.5rem + 0.5vw);
+    }
+
+    header nav {
+        margin-top: 0;
     }
 }
