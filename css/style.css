@@ -21,6 +21,7 @@ body {
 #container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     margin: 0 auto;
     padding: 0 calc(1rem + 1vw);
 }
@@ -226,6 +227,12 @@ main a {
 
 #filters h2 {
     font-size: 1.2rem;
+}
+
+#filters-buttons{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
 .filter-button {
@@ -473,10 +480,55 @@ footer {
 
 /*********** Tablet Styles ***********/
 @media (max-width: 1024px) {
+    #filters {
+        flex-direction: column;
+        align-items: left;
+        gap: 0.7rem;
+    }
+
+    #filters h2 {
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    #filters-buttons {
+        gap: 0.7rem;
+    }
+
+    #hebergements-and-populaires {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #hebergements {
+        width: 100%;
+    }
+
+    #populaires {
+        width: 100%;
+    }
+
+    #populaires-cards {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #activites-cards .card-image-div {
+        height: 75%;
+    }
+
+    #activites-cards .card-content {
+        height: 25%;
+    }
 }
 
 /*********** Mobile Styles ***********/
 @media (max-width: 768px) {
+    #footer {
+        padding: 0.5rem 0;
+    }
+
     #footer-container {
         flex-direction: column;
     }
