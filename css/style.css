@@ -533,6 +533,9 @@ footer {
     #container {
         padding: 0 0;
     }
+
+    /* Header */
+
     header {
         align-items: center;
         padding: 1rem 0;
@@ -544,13 +547,11 @@ footer {
     }
 
     header h1 {
-        /* font-size: 22px; */
         width: 80%;
         margin: 0 0 0 -3rem;
     }
 
     header h2 {
-        /* font-size: 16px; */
         width: 80%;
         margin: 0 0 0 -3rem;
     }
@@ -564,7 +565,6 @@ footer {
         margin-top: 2rem;
         width: 100vw;
         justify-content: start;
-        /* background-color: #0065fc; */
         gap: 0;
     }
 
@@ -580,6 +580,8 @@ footer {
     #logo-nav nav a:active {
         border-bottom-color: var(--main-color);
     }
+
+    /* Main */
 
     #search-form {
         min-width: 90%;
@@ -672,6 +674,8 @@ footer {
     #activites-cards .card-content h3 {
         font-size: 1rem;
     }
+
+    /* Footer */
 
     #footer {
         padding: 0.5rem 0;
