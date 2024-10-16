@@ -91,7 +91,6 @@ a {
 
 main a {
     flex: 1 1 30%;
-
     margin: 1rem 1rem;
 }
 
@@ -289,7 +288,7 @@ main a {
 #hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 1.2rem;
+    padding: 0.8rem;
 }
 
 /****** Hebergements ***********/
@@ -333,6 +332,16 @@ main a {
     margin: auto auto 0 1rem;
 }
 
+#see-more-button {
+    border: none;
+    padding: 0.6rem 1rem;
+    margin: auto auto 0 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: transparent;
+}
+
 /****** Populaires ***********/
 
 #populaires {
@@ -343,6 +352,47 @@ main a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#populaires-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+#populaires-cards a {
+    margin: 0.7rem 0.7rem;
+}
+
+#populaires-cards .card {
+    height: calc(7rem + 2vw);
+}
+
+#populaires-cards .card-image-div {
+    height: 100%;
+    width: 33%;
+}
+
+#populaires-cards img {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#populaires-cards .card-content {
+    height: 100%;
+    width: 67%;
+    flex-direction: column;
+}
+
+#populaires-cards .card-content h3 {
+    margin: 1rem auto 0 1rem;
+}
+
+#populaires-cards .card-content p {
+    margin: 0.4rem auto auto 1rem;
+}
+
+#populaires-cards .card-content .card-rating {
+    margin: auto auto 0.2rem 1rem;
 }
 
 /****** Activités ***********/
