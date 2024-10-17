@@ -575,7 +575,7 @@ footer {
         border-bottom: 0.2rem solid transparent;
         text-align: center;
     }
-    
+
     #logo-nav nav a:hover,
     #logo-nav nav a:active {
         border-bottom-color: var(--main-color);
@@ -623,12 +623,12 @@ footer {
         display: flex;
         flex-wrap: wrap;
     }
-    
+
     #hebergements-cards a {
         margin: 0.7rem 0;
         flex: 1 1 100%;
     }
-    
+
     #hebergements-cards .card {
         height: calc(14rem + 5vw);
     }
@@ -649,7 +649,7 @@ footer {
     #populaires-cards a {
         margin: 0.5rem 0;
     }
-    
+
     #populaires-cards .card {
         height: calc(14rem + 2vw);
     }
