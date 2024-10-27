@@ -588,6 +588,25 @@ footer {
         margin: 0 auto;
     }
 
+    #search-form input {
+        font-size: 1.4rem;
+    }
+
+    #search-text {
+        display: none;
+    }
+
+    #search-button {
+        width: 10%;
+        border-radius: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    #search-button i{
+        display: block;
+        color: white;
+    }
+
     #filters {
         width: 90%;
         margin: 1rem auto;
